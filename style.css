@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+}
+.main{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    columns: hsl(249, 10%, 26%);
+    columns: hsl(246, 25%, 77%);
+    font-family: 'Poppins', sans-serif;
+}
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 8px;
+    background-color: hsl(0, 0%, 90%);
+    border: none;
+    box-sizing: border-box;
+}
+button{
+    background-color: hsl(154, 59%, 51%);
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+
+}
+.left{
+    padding: 10px;
+    width: 100%;
+    margin: 20px;
+}
+.right{
+    width: 100%;
+}
+div h3{
+    font-weight: 700;
+    font-size: 37px;
+    color: hsl(0, 0%, 90%);
+    margin-bottom: 10px;
+    
+}
+div p{
+    font-weight: 400;
+    font-size: 12px;
+    color: hsl(0, 0%, 90%);
+}
+a{
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+    font-weight: 700;
+
+}
+.top{
+    width: 100%;
+    padding: 10px;
+    background-color: hsl(249, 10%, 26%);
+    font-weight: 400;
+    color: hsl(0, 0%, 90%);
+    font-size: 12px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+@media screen and (max-width:1000px){
+    .main{
+        width: 80%;
+    }
+}
+@media screen and (max-width:475px) {
+    body{
+        background-image: url(./images/bg-intro-mobile.png);
+    }
+    .main{
+        flex-direction: column;
+        
+    }
+}
+@media screen and (max-width:375px) {
+    .main{
+        height: 90vh;
+    }
+}
